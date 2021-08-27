@@ -1,0 +1,43 @@
+@media only screen and (min-width: 768px) {
+
+    .Thankyou
+    {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Thankyou
+    {
+        width: 90%;
+    }
+
+}
+
+.Thankyou
+{
+    margin: 20px auto;
+}
+
+.topic_name
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.thanks_msg
+{
+    font-size: 18px;
+}
+
+.message
+{
+    font-size: 13px;
+}
+
+.thanks_image
+{
+    max-width: 100%;
+}

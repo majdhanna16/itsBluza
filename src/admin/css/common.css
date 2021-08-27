@@ -1,0 +1,146 @@
+@media only screen and (min-width: 768px) {
+
+    .Admin
+    {
+        display: flex;
+    }
+
+    .AdminContent
+    {
+        margin: 0px 10px;
+    }
+
+    .AdminPageMainTitle
+    {
+        margin: 0;
+    }
+
+    .inputRowData .inputValue
+    {
+        width: 350px;
+    }
+
+    .SpecificColorDetails
+    {
+        width: fit-content;
+    }
+
+    .inputSubmitBtn
+    {
+        width: 200px;
+        margin: 10px 90px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Admin
+    {
+        display: block;
+    }
+
+    .AdminContent
+    {
+        margin: 0px auto;
+    }
+
+    .AdminPageMainTitle
+    {
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #e7e7e7;
+    }
+
+    .inputRowData .inputValue
+    {
+        width: 90%;
+    }
+
+    .inputSubmitBtn
+    {
+        width: 100%;
+        margin: 10px auto;
+        display: block;
+    }
+
+}
+
+.Admin
+{
+    margin: 20px 0;
+}
+
+.AdminContent
+{
+    width: 90%;
+}
+
+.AdminPageMainTitle
+{
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.inputRowData
+{
+    margin: 5px 0px;
+}
+
+.inputRowData .inputMainTitle
+{
+    margin: 2px;
+    font-size: 14px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.inputRowData .inputValue
+{
+    display: block;
+    border: 1px solid #e7e7e7;
+    padding: 7px;
+    margin: 1px 0px;
+    outline: none;
+    resize: unset;
+}
+
+.inputRowData .inputRowBtn
+{
+    margin: 5px;
+    padding: 9px;
+    background-color: #000;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.colorBaseTitle
+{
+    font-weight: 600;
+    margin: 0;
+    text-transform: capitalize;
+    margin-top: 25px;
+}
+
+.SpecificColorDetails
+{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.inputSubmitBtn
+{
+    height: 35px;
+    background-color: #b34a4a;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}

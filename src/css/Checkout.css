@@ -1,0 +1,324 @@
+@media only screen and (min-width: 768px) {
+
+    .Checkout
+    {
+        text-align: center;
+        display: flex;
+    }
+
+    .Checkout .checkoutLeft
+    {
+        width: 60%;
+        border-right: 1px solid #e7e7e7;
+    }
+
+    .addressDetailsRow .errorMessage
+    {
+        width: 230px;
+    }
+
+    .Checkout .checkoutRight
+    {
+        width: 35%;
+        position: sticky;
+        top: 20px;
+    }
+
+    .addressDetails
+    {
+        padding: 10px;
+    }
+
+    .addressDetailsRow .addressDetailsInput
+    {
+        width: 220px;
+    }
+
+    .addressSubmitBtn:hover
+    {
+        background-color: #666;
+    }
+
+    .checkoutRight .CheckoutBtn:hover
+    {
+        background-color: #666;
+    }
+
+    .CouponSection .CouponBtn:hover
+    {
+        background-color: #e7e7e7;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Checkout
+    {
+        display: block;
+    }
+
+    .Checkout .checkoutLeft
+    {
+        width: 100%;
+    }
+
+    .Checkout .checkoutRight
+    {
+        width: 90%;
+    }
+
+    .addressDetails
+    {
+        margin-bottom: 20px;
+    }
+
+    .addressDetailsRow .addressDetailsInput
+    {
+        width: 95%;
+    }
+
+    .addressDetailsRow .errorMessage
+    {
+        width: 100%;
+    }
+
+}
+
+.Checkout
+{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.Checkout .checkoutLeft
+{
+    margin: 0px auto;
+}
+
+.Checkout .checkoutRight
+{
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.addressDetails
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.addressDetails .formTitle
+{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+}
+
+.addressDetails .addressDetailsRow
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.addressDetailsRow .addressDetailName
+{
+    font-size: 13px;
+    width: 150px;
+    display: inline-flex;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.addressDetailsRow .addressDetailsInput
+{
+    margin: auto 0px;
+    padding: 5px;
+    outline: none;
+    font-size: 13px;
+    border: 1px solid #e7e7e7;
+    text-transform: capitalize;
+}
+
+.addressSubmitBtn
+{
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    min-width: 200px;
+    outline: none;
+    cursor: pointer;
+    background-color: #000;
+    transition: ease-in-out .2s;
+}
+
+.payment_section
+{
+    margin: 20px auto;
+}
+
+.payment_section .payment_Title
+{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+}
+
+.checkoutRight .orderRightTitle
+{
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.checkoutRight .subTotalFields
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.checkoutRight .orderTotalsField
+{
+    display: flex;
+    padding: 2px 0px;
+}
+
+.orderTotalsField .orderTotalKey
+{
+    width: 30%;
+    font-size: 13px;
+    margin: auto 0;
+    color: #666666;
+}
+
+.orderTotalsField .orderTotalValue
+{
+    width: 70%;
+    font-size: 13px;
+    color: #666666;
+}
+
+.checkoutRight .TotalLastField
+{
+    padding: 10px 0;
+}
+
+.TotalLastField .orderTotalValue
+{
+    width: 70%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.checkoutRight .CheckoutBtn
+{
+    background-color: #b34a4a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    transition: ease-in-out .2s;
+}
+
+.payment_option
+{
+    margin: 20px auto;
+    display: flex;
+    width: 90%;
+    cursor: pointer;
+}
+
+.payment_option .payment_radio
+{
+    margin: auto 15px;
+}
+
+.payment_option .payment_value
+{
+    display: flex;
+}
+
+.payment_value .payment_icon
+{
+    margin: auto 0;
+}
+
+.payment_value .payment_desc
+{
+    margin: auto 15px;
+    display: block;
+}
+
+.payment_desc .payment_name
+{
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.payment_desc .payment_info
+{
+    display: flex;
+    font-size: 13px;
+    color: #666;
+    text-align: left;
+    white-space: break-spaces;
+}
+
+.CouponSection
+{
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    height: 30px;
+    border: 1px solid #e7e7e7;
+}
+
+.CouponSection .CouponInput
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+}
+
+.CouponSection .CouponBtn
+{
+    width: 100px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #fff;
+    border-left: 1px solid #e7e7e7;
+    transition: ease-in-out .2s;
+}
+
+.addressDetailsRow .errorMessage
+{
+    margin: 0 0 0 auto;
+    text-align: left;
+    font-size: 12px;
+    color: red;
+}
+
+label
+{
+    display: block;
+}

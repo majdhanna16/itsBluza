@@ -1,0 +1,273 @@
+@media only screen and (min-width: 768px) {
+
+    .Shop
+    {
+        margin: 20px 0px;
+        display: flex;
+    }
+
+    .Shop .ShopLeft
+    {
+        width: 30%;
+    }
+
+    .Shop .ShopRight
+    {
+        width: 70%;
+        margin: 0px 30px;
+    }
+
+    .shopLeftContent .dropDown button:hover
+    {
+        background-color: #f3f3f3;
+    }
+
+    .ShopContent .shopProductCard:hover
+    {
+        box-shadow: 0px 0px 5px 0px #666666;
+    }
+
+    .ShopContent .shopProductCard
+    {
+        width: 200px;
+    }
+
+    .shopProductCard .shopProductCardImageSpace
+    {
+        height: 290px;
+    }
+
+    .clearFiltersBtn
+    {
+        border: none;
+        color: #666666;
+        cursor: pointer;
+        border-left: 1px solid #e7e7e7;
+        margin-left: 20px;
+        background: transparent;
+        transition: ease-in-out .2s;
+    }
+
+    .clearFiltersBtn:hover
+    {
+        color: #913b3b;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Shop
+    {
+        margin: 20px 0px;
+    }
+
+    .Shop .ShopLeft
+    {
+        width: 100%;
+    }
+
+    .Shop .ShopRight
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .ShopContent .shopProductCard
+    {
+        width: 250px;
+    }
+
+    .shopProductCard .shopProductCardImageSpace
+    {
+        height: 360px;
+    }
+
+    .clearFiltersBtn
+    {
+        color: #666666;
+        cursor: pointer;
+        width: 100%;
+        border: 1px solid #e7e7e7;
+        background: transparent;
+        padding: 5px 0px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+}
+
+.shopLeftContent
+{
+    width: 80%;
+    margin: 0px auto 5px auto;
+    border: 1px solid #e7e7e7;
+}
+
+.shopLeftContent .dropDownBtn
+{
+    width: 100%;
+    border: none;
+    padding: 15px 0px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.shopLeftContent .dropDown
+{
+    width: 100%;
+}
+
+.shopLeftContent .dropDown button
+{
+    display: block;
+    padding: 7px 0px;
+    width: 100%;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.shopLeftContent .dropDown .active
+{
+    background-color: #f3f3f3;
+}
+
+.ShopRight .ShopTopBar
+{
+    border: 1px solid #e7e7e7;
+    display: flow-root;
+    padding: 10px;
+}
+
+.ShopRight .ShopTopBar .CategoryName
+{
+    color: #000;
+    letter-spacing: 2.4px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+.ShopRight .ShopContent
+{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.ShopContent .shopProductCard
+{
+    height: auto;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #e7e7e7;
+    transition: ease-in-out .2s;
+}
+
+.shopProductCard .shopProductCardImageSpace
+{
+    width: 100%;
+}
+
+.shopProductCard .shopProductCardImageSpace .shopProductCardImage
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.shopProductCard .shopProductCardOnSaleTag
+{
+    position: absolute;
+    float: right;
+    margin: 25px;
+    background-color: rgb(245 236 88 / 80%);
+    padding: 20px;
+    border-radius: 25%;
+    text-decoration: underline;
+}
+
+.shopProductCard .shopProductCardTitle
+{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 3px auto;
+}
+
+.shopProductCard .shopProductCardPriceSpace
+{
+    margin: 0px 40px;
+    display: flex;
+}
+
+.shopProductCard .shopProductCardBSPrice
+{
+    width: 50%;
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #999;
+    margin: auto;
+}
+
+.shopProductCard .shopProductCardPrice
+{
+    width: 50%;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.shopProductCard * 
+{
+    cursor: pointer;
+}
+
+.filtersSection
+{
+    width: fit-content;
+}
+
+.filtersSection .activeFiltersTitle
+{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filtersSection .activeFilterLabel
+{
+    margin: 0px 5px;
+    border: 1px solid #e7e7e7;
+    padding: 0px 5px;
+    font-size: 13px;
+    color: #999;
+    display: inline-flex;
+}
+
+.shopProductCardLink
+{
+    color: inherit;
+    text-decoration: inherit;
+}

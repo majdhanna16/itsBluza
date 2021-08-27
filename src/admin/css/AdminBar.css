@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) {
+
+    .AdminBarSection
+    {
+        width: 300px;
+    }
+
+    .AdminBarSection a:hover
+    {
+        background-color: #2a2a2a;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .AdminBarSection
+    {
+        width: 100%;
+    }
+
+    .menuDropDownBtn
+    {
+        display: block;
+        width: 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 7px;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        outline: none;
+        background-color: #b34a4a;
+    }
+
+}
+
+.AdminBarSection
+{
+    background-color: #353535;
+    overflow: hidden;
+}
+
+.AdminBarSection a
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0px;
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out .2s;
+}

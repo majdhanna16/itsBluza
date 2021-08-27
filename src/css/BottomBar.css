@@ -1,0 +1,135 @@
+@media only screen and (min-width: 768px) {
+
+    .bottomBarAboutUs
+    {
+        display: flex;
+    }
+
+    .bottomBarAboutUs .aboutUsLeft
+    {
+        width: 30%;
+    }
+
+    .bottomBarAboutUs .aboutUsMiddle
+    {
+        width: 40%;
+        margin: auto 40px;
+    }
+
+    .bottomBarAboutUs .aboutUsRight
+    {
+        width: 30%;
+    }
+
+    .bottomMark
+    {
+        margin-bottom: 20px;
+    }
+
+    .followUsOptions a:hover
+    {
+        transform: scale(1.2);
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .bottomBarAboutUs
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .bottomBarAboutUs .aboutUsLeft
+    {
+        display: none;
+        width: 100%;
+    }
+
+    .bottomBarAboutUs .aboutUsMiddle
+    {
+        width: 100%;
+    }
+
+    .bottomBarAboutUs .aboutUsRight
+    {
+        width: 100%;
+    }
+
+    .bottomMark
+    {
+        margin-bottom: 80px;
+    }
+
+}
+
+.bottomBarAboutUs
+{
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    padding: 20px 0px;
+}
+
+.bottomBarAboutUs .aboutUsLogo
+{
+    width: 60%;
+    margin-left: 40px;
+}
+
+.bottomBarAboutUs .aboutUsTitle
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+.bottomBarAboutUs .aboutUsContent
+{
+    color: #000;
+    font-size: 14px;
+}
+
+.bottomBarAboutUs .followUsTitle
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    text-align: center;
+}
+
+.followUsOptions
+{
+    justify-content: center;
+    display: flex;
+}
+
+.followUsOptions a
+{
+    color: #000;
+    margin: 0px 10px;
+    font-size: 22px;
+    transition: ease-in-out .2s;
+}
+
+.bottomMark
+{
+    text-align: center;
+}
+
+.bottomMark
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bottomMark p
+{
+    color: #666;
+    margin: 0px;
+    font-size: 12px;
+}

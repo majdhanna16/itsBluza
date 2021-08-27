@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Message_display
+{
+  background-color: #0f834d;
+  width: 90%;
+  padding: 8px;
+  margin: 10px auto;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.Message_display .Message_Title
+{
+  font-weight: 600;
+  margin: 0px 5px;
+  text-transform: uppercase;
+}
+
+.Message_display .Message_Title::after
+{
+  content: "\2192";
+  margin: 0px 5px;
+}
+
+.Message_display .Message_content
+{
+  font-size: 13px;
+  margin: 0px 2px;
+}
+
+.Message_display .Message_Link
+{
+  color: inherit;
+  font-size: 13px;
+  margin: 0px 5px;
+}
+

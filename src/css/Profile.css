@@ -1,0 +1,496 @@
+@media only screen and (min-width: 768px) {
+
+    .Profile
+    {
+        display: flex;
+    }
+
+    .Profile .ProfileLeft
+    {
+        width: 65%;
+    }
+
+    .Profile .ProfileRight
+    {
+        border: 1px solid #e7e7e7;
+        width: 30%;
+    }
+
+    .ProfileSubmitBtn:hover
+    {
+        background-color: #666;
+    }
+
+    .wishlistProductCard:hover
+    {
+        box-shadow: 0px 0px 5px 0px #666666;
+    }
+
+    .Profile .ProfileRight button
+    {
+        border: none;
+    }
+
+    .Profile .ProfileRight button:hover
+    {
+        background-color: #f3f3f3;
+    }
+
+    .wishlistLoadMoreBtn
+    {
+        width: 350px;
+    }
+
+    .wishlistLoadMoreBtn:hover
+    {
+        background-color: #666;
+    }
+
+    .changeDetails
+    {
+        padding: 10px;
+    }
+
+    .changeDetailsRow .changeDetailsInput
+    {
+        width: 250px;
+    }
+
+    .noOrdersDiv a:hover
+    {
+        background-color: #666;
+    }
+
+    .wishlistItems
+    {
+        display: flex;
+    }
+
+    .wishlistItemRemoveBtn:hover
+    {
+        background-color: #666;
+    }
+
+    .wishlistProductCard
+    {
+        width: 200px;
+    }
+
+    .reOrderBtn
+    {
+        width: 200px;
+    }
+
+    .reOrderBtn:hover
+    {
+        background-color: #666;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Profile
+    {
+        display: block;
+    }
+
+        .Profile .ProfileLeft
+    {
+        width: 100%;
+    }
+
+    .Profile .ProfileRight
+    {
+        width: 100%;
+        border: none;
+    }
+
+    .Profile .ProfileRight button
+    {
+        border: none;
+        border-top: 1px solid #e7e7e7;
+    }
+
+    .changeDetails
+    {
+        margin-bottom: 20px;
+    }
+
+    .changeDetailsRow .changeDetailsInput
+    {
+        width: 95%;
+    }
+
+    .wishlistLoadMoreBtn
+    {
+        width: 95%;
+    }
+
+    .wishlistItems
+    {
+        display: block;
+    }
+
+    .wishlistProductCard
+    {
+        width: 95%;
+    }
+
+    .reOrderBtn
+    {
+        width: 90%;
+    }
+
+}
+
+.Profile
+{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.Profile .ProfileLeft
+{
+    margin: 0px auto;
+}
+
+.Profile .ProfileRight
+{
+    height: -webkit-fill-available;
+}
+
+.Profile .ProfileRight button
+{
+    width: 100%;
+    padding: 7px;
+    cursor: pointer;
+    background-color: #fff;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.profileUsername
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.About
+{
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.About .AboutField
+{
+    margin: 3px 0px;
+    width: 100%;
+    display: block;
+}
+
+.AboutField .AboutTitle
+{
+    width: 130px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    color: #666;
+}
+
+.AboutField .AboutContent
+{
+    font-size: 13px;
+    color: #666;
+}
+
+.About .AboutBaseTitle, .ProfileMainContent .ProfileMainBaseTitle
+{
+    margin: 5px 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ProfileMainContent
+{
+    margin: 20px 0px 10px 0px;
+}
+
+.wishlistItems
+{
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.ordersItems
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.wishlistProductCard
+{
+    height: auto;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #e7e7e7;
+    transition: ease-in-out .2s;
+}
+
+.wishlistProductCard .productCardImageSpace
+{
+    width: 100%;
+    height: auto;
+}
+
+.wishlistProductCard .productCardImageSpace .productCardImage
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.wishlistProductCard .productCardTitle
+{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 3px auto;
+    text-align: center;
+}
+
+.wishlistProductCard .productCardPriceSpace
+{
+    margin: 5px 40px;
+    display: flex;
+}
+
+.wishlistProductCard .productCardBSPrice
+{
+    width: 50%;
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #999;
+    margin: auto;
+}
+
+.wishlistProductCard .productCardPrice
+{
+    width: 50%;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.homeProductsViewerContent
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.wishlistProductCard .productCardOnSaleTag
+{
+    position: absolute;
+    float: right;
+    margin: 25px;
+    background-color: rgb(245 236 88 / 80%);
+    padding: 20px;
+    border-radius: 25%;
+    text-decoration: underline;
+}
+
+.wishlistProductCard * 
+{
+    cursor: pointer;
+}
+
+.wishlistProductCardLink
+{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.changeDetails .formTitle
+{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+}
+
+.changeDetails .changeDetailsRow
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.changeDetailsRow .changeDetailName
+{
+    font-size: 13px;
+    width: 150px;
+    display: inline-flex;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.changeDetailsRow .changeDetailsInput
+{
+    margin: auto 0px;
+    padding: 5px;
+    outline: none;
+    font-size: 13px;
+    border: 1px solid #e7e7e7;
+}
+
+.ProfileSubmitBtn
+{
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    min-width: 200px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    background-color: #000;
+    transition: ease-in-out .2s;
+}
+
+.changeDetails
+{
+    padding-top: 10px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.emptyWishListImg
+{
+    max-width: 100%;
+}
+
+.orderBag
+{
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px;
+    display: block;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.orderBag a
+{
+    margin: 5px;
+}
+
+.orderBag .orderProduct
+{
+    width: 100%;
+    display: flex;
+}
+
+.orderBag *
+{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.orderProduct .orderProductImage
+{
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.orderProductDetails .orderProductName
+{
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.noOrdersDiv
+{
+    text-align: center;
+}
+
+.noOrdersDiv .noOrdersTitle
+{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 2.4px;
+}
+
+.noOrdersDiv a
+{
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    outline: none;
+    text-decoration: inherit;
+    cursor: pointer;
+    background-color: #000;
+    transition: ease-in-out .2s;
+}
+
+.wishlistItemRemoveBtn
+{
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    text-decoration: inherit;
+    cursor: pointer;
+    background-color: #000;
+    transition: ease-in-out .2s;
+}
+
+.reOrderBtn
+{
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    border: none;
+    height: 40px;
+    outline: none;
+    text-decoration: inherit;
+    cursor: pointer;
+    background-color: #b34a4a;
+    transition: ease-in-out .2s;
+}
+
+.wishlistLoadMoreBtn
+{
+    margin: 20px auto;
+    display: block;
+    color: #fff;
+    border: none;
+    height: 40px;
+    outline: none;
+    text-decoration: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #b34a4a;
+    transition: ease-in-out .2s;
+}

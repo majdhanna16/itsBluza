@@ -1,0 +1,410 @@
+@media only screen and (min-width: 768px) {
+
+    .Product
+    {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .Product .ProductLeft
+    {
+        width: 50%;
+        display: flex;
+    }
+
+    .Product .ProductRight
+    {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .Product .ProductLeft .viewImageSpace .viewImage
+    {
+        height: auto;
+    }
+
+    .ProductRight .PricesSpace
+    {
+        margin: 25px 0px;
+    }
+
+    .addReviewForm
+    {
+        width: 50%;
+    }
+
+    .SubmitBtn:hover
+    {
+        background-color: #666;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Product
+    {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .Product .ProductLeft
+    {
+        width: 100%;
+        display: flex;
+    }
+    
+    .Product .ProductRight
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .Product .ProductLeft .viewImageSpace
+    {
+        height: 350px;
+    }
+
+    .Product .ProductLeft .viewImageSpace .viewImage
+    {
+        height: 100%;
+    }
+
+    .Product .ProductLeft .miniImages
+    {
+        width: 20%;
+        height: 250px;
+        overflow-y: auto;
+    }
+
+    .ProductRight .ProductTitle
+    {
+        text-align: center;
+    }
+
+    .ProductRight .PricesSpace
+    {
+        margin: 25px auto;
+    }
+
+    .addReviewForm
+    {
+        width: 90%;
+    }
+
+    .addReview
+    {
+        flex-flow: wrap;
+    }
+
+}
+
+.Product .ProductLeft .viewImageSpace
+{
+    width: 80%;
+}
+
+.Product .ProductLeft .viewImageSpace .viewImage
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.Product .ProductLeft .miniImages
+{
+    width: 20%;
+}
+
+.Product .ProductLeft .miniImages img
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #e7e7e7;
+    cursor: pointer;
+}
+
+.ProductRight .ProductTitle
+{
+    margin: 0;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ProductRight .PricesSpace
+{
+    width: fit-content;
+}
+
+.ProductRight .PricesSpace .Price
+{
+    color: #b34a4a;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ProductRight .PricesSpace .PrevPrice
+{
+    text-decoration: line-through;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.ProductRight .PricesSpace .savePercent
+{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+}
+
+.ProductRight .optinsSection
+{
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 10px 0px;
+}
+
+.ProductRight .optinsSection .optinContent
+{
+    text-align: center;
+    margin: 10px 0px;
+    display: flex;
+}
+
+.optinContent .optionName
+{
+    margin: auto;
+    width: 30%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.optinContent .optionSelect
+{
+    width: 70%;
+    padding: 8px 0px;
+    outline: none;
+    font-size: 12px;
+    color: #666666;
+    text-align-last: center;
+    border: 1px solid #e7e7e7;
+}
+
+.ProductRight .ButtonsSection
+{
+    margin: 20px 0px;
+}
+
+.ProductRight .ButtonsSection .addToCartBtn
+{
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.ProductRight .ButtonsSection .productBtn
+{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid #e7e7e7;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+.ProductRight .ButtonsSection .productBtn:hover
+{
+    background-color: #f3f3f3;
+}
+
+.productBottomDetails
+{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.productBottomDetails .detailsTopBar
+{
+    display: flex;
+    justify-content: center;
+}
+
+.productBottomDetails .detailsTopBar .detailsBtns
+{
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding: 10px 0px;
+    width: 100%;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+.productBottomDetails .detailsTopBar .detailsBtns:hover
+{
+    color: #000;
+}
+
+.productBottomDetails .detailsContent
+{
+    background-color: #fff;
+    margin-top: -1px;
+    border: 1px solid #e7e7e7;
+}
+
+.productBottomDetails .detailsContent .ProductDescription
+{
+    width: 90%;
+    color: #666666;
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+.addReviewForm
+{
+    margin: 0px auto;
+}
+
+.addReviewBaseTitle
+{
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-decoration: underline #b34a4a;
+}
+
+.addReview
+{
+    display: flex;
+    justify-content: center;
+}
+
+.addReviewData
+{
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+}
+
+.addReviewData .addReviewTitle, .addReviewDataMessage .addReviewTitle
+{
+    margin: 2px 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.addReviewData .addReviewInput
+{
+    font-size: 12px;
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+    outline: none;
+    width: -webkit-fill-available;
+}
+
+.addReviewDataMessage
+{
+    width: 100%;
+    text-align: center;
+}
+
+.addReviewDataMessage .addReviewMessage
+{
+    width: -webkit-fill-available;
+    margin: 0px 10px;
+    outline: none;
+    font-size: 12px;
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+    resize: none;
+}
+
+.SubmitBtn
+{
+    margin: 5px auto;
+    display: block;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    background-color: #000;
+    transition: ease-in-out .2s;
+}
+
+.reviews
+{
+    margin: 20px 0px;
+}
+
+.reviewData
+{
+    width: 90%;
+    margin: 10px auto;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0px;
+}
+
+.reviewData .ReviewerName
+{
+    margin: 0px 0px 5px 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reviewData .reviewerComment
+{
+    font-size: 12px;
+    font-weight: 400;
+    white-space: break-spaces;
+}
+
+.no_reviews
+{
+    text-align: center;
+    padding: 20px 0px;
+    width: 90%;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 2px;
+}
+
+.addReviewInputNote
+{
+    width: 100%;
+    margin: 0 0 0 auto;
+    text-align: left;
+    font-size: 12px;
+    color: red;
+}

@@ -1,0 +1,169 @@
+@media only screen and (min-width: 768px) {
+
+    .topBar
+    {
+        padding: 10px 30px;
+        display: flow-root;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    
+    .topBarRight
+    {
+        float: right;
+    }
+    
+    .loginORregisterBtn
+    {
+        font-weight: 400;
+        color: #666666;
+        font-size: 13px;
+        white-space: nowrap;
+        text-transform: capitalize;
+    }
+    
+    .cartHeaderBtn, .cartHeaderBtn *
+    {
+        color: #666666;
+        font-size: 13px;
+        text-decoration: inherit;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        transition: ease-in-out .2s;
+    }
+
+    .cartHeaderBtn svg
+    {
+        font-size: 22px;
+    }
+
+    .HeaderRouterBtns .HeaderRouterBtn
+    {
+        color: #000;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: ease-in-out .2s;
+    }
+
+    .HeaderRouterBtns .HeaderRouterBtn:hover
+    {
+        color: #b34a4a;
+    }
+
+    .HeaderRouterBtns .active
+    {
+        color: #b34a4a;
+    }
+
+    .HeaderRouterBtns
+    {
+        float: right;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        margin-right: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .topBar
+    {
+        position: fixed;
+        bottom: 0px;
+        background-color: #262626;
+        width: 100%;
+        align-items: stretch;
+        display: flex;
+        z-index: 999;
+        box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    }
+
+    .topBar .mobileModeHeaderBtn
+    {
+        color: #f3f3f3;
+        text-decoration: inherit;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px;
+        border-right: 1px solid grey;
+        border-left: 1px solid grey;
+        font-size: 26px;
+    }
+
+    .HeaderRouterBtns .mobileModeHeaderRouterBtn
+    {
+        color: #f3f3f3;
+        background-color: #000;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        border: none;
+    }
+
+    .menuHeaderBG
+    {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color:  rgb(0 0 0 / 60%);
+        z-index: 998;
+    }
+
+    .menuHeaderBtn
+    {
+        background-color: #353535;
+        width: 200px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .HeaderRouterBtn
+    {
+        color: #f3f3f3;
+        text-decoration: inherit;
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .menuHeaderBtn .active
+    {
+        background-color: #2a2a2a;
+    }
+
+    .HeaderRouterBtns
+    {
+        float: right;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        margin-right: 20px;
+    }
+
+}
+
+.RouterHeader
+{
+    height: 100px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #000;
+}
+
+.headerLogo
+{
+    width: auto;
+    height: 100%;
+}
+
+.welcomeBtn
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+}

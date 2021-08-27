@@ -1,0 +1,380 @@
+@media only screen and (min-width: 1200px) {
+
+    .Cart .productInCart
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .productInCart *
+    {
+        margin: auto 0px;
+    }
+
+    .productInCart .productInCartImage
+    {
+        max-width: 100px;
+    }
+
+    .productInCart .ProductInCartName
+    {
+        width: 250px;
+    }
+
+    .Cart
+    {
+        display: flex;
+    }
+    
+    .Cart .CartLeft
+    {
+        width: 65%;
+    }
+    
+    .Cart .CartRight
+    {
+        width: 25%;
+        position: sticky;
+        top: 20px;
+    }
+
+    .productInCart .productInCartTotalPrice
+    {
+        min-width: 70px;
+        display: block;
+    }
+
+    .productInCart .QuantitySpace
+    {
+        height: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .Cart
+    {
+        display: block;
+    }
+
+    .Cart .productInCart
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .productInCart *
+    {
+        margin: auto 0px;
+    }
+
+    .productInCart .productInCartImage
+    {
+        max-width: 100px;
+    }
+
+    .productInCart .ProductInCartName
+    {
+        width: 250px;
+    }
+
+    .Cart .CartLeft
+    {
+        width: 90%;
+    }
+
+    .Cart .CartRight
+    {
+        width: 50%;
+    }
+
+    .productInCart .productInCartTotalPrice
+    {
+        min-width: 70px;
+        display: block;
+    }
+
+    .productInCart .QuantitySpace
+    {
+        height: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Cart
+    {
+        display: block;
+    }
+
+    .Cart .CartLeft
+    {
+        width: 90%;
+    }
+
+    .Cart .CartRight
+    {
+        width: 90%;
+    }
+
+    .Cart .productInCart
+    {
+        display: block;
+    }
+
+    .productInCart .buttonImage
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .productInCart .productInCartImage
+    {
+        width: 85%;
+        display: flex;
+        margin: 0 auto;
+        max-width: none;
+    }
+
+    .productInCart *
+    {
+        margin: 0;
+    }
+
+    .productInCart .ProductInCartName
+    {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
+
+    .productInCart .mobileLineSpace
+    {
+        justify-content: space-between;
+        display: flex;
+        margin: 5px auto;
+        width: 75%;
+    }
+
+    .productInCart .mobileLeftTitle
+    {
+        font-size: 13px;
+        font-weight: 600;
+        margin: auto 0;
+    }
+
+    .productInCart .productInCartTotalPrice
+    {
+        min-width: 0;
+    }
+
+    .productInCart .QuantitySpace
+    {
+        height: 30px;
+    }
+
+}
+
+.productInCart .buttonImage
+{
+    display: flex;
+}
+
+.Cart
+{
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.Cart .CartLeft
+{
+    margin: 0 auto;
+}
+
+.Cart .CartRight
+{
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.Cart .productInCart
+{
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.productInCart .removeProdutBtn
+{
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+    color: #bbbbbb;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.productInCart .productInCartImage
+{
+    height: auto;
+}
+
+.productInCart .ProductInCartName
+{
+    color: #000;
+    font-size: 13px;
+    text-decoration: inherit;
+}
+
+.productInCart .productInCartPrice
+{ 
+    color: #888888;
+    font-size: 14px;
+}
+
+.productInCart .productInCartPrice::before
+{
+    content: '\20AA';
+}
+
+.productInCart .QuantitySpace
+{
+    border: 1px solid #e1e1e1;
+    padding: 2px;
+}
+
+.productInCart .QuantitySpace .quantityPlus, .productInCart .QuantitySpace .quantityMinus
+{
+    width: 35px;
+    height: 100%;
+    color: #666;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+.productInCart .QuantitySpace .quantityPlus:hover, .productInCart .QuantitySpace .quantityMinus:hover
+{
+    background-color: #f3f3f3;
+}
+
+.productInCart .QuantitySpace .quantityViewer
+{
+    width: 35px;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 0;
+    border: none;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+
+.productInCart .productInCartTotalPrice
+{
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+}
+
+.productInCart .productInCartTotalPrice::before
+{
+    content: '\20AA';
+}
+
+.CartRight .cartRightTitle
+{
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.CartRight .subTotalFields
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.CartRight .CartTotalsField
+{
+    display: flex;
+    padding: 2px 0px;
+}
+
+.CartTotalsField .CartTotalKey
+{
+    width: 30%;
+    font-size: 13px;
+    margin: auto 0;
+    color: #666666;
+}
+
+.CartTotalsField .CartTotalValue
+{
+    width: 70%;
+    font-size: 13px;
+    color: #666666;
+}
+
+.CartRight .TotalLastField
+{
+    padding: 10px 0;
+}
+
+.TotalLastField .CartTotalValue
+{
+    width: 70%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.CartRight .CheckoutBtn
+{
+    background-color: #b34a4a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    transition: ease-in-out .2s;
+}
+
+.CartRight .CheckoutBtn:hover
+{
+    background-color: #666;
+}
+
+.Empty_cart
+{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.outOfStock
+{
+    color: red;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.LoadingGif
+{
+    display: block;
+    margin: auto;
+}

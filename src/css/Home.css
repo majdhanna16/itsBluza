@@ -1,0 +1,219 @@
+@import "react-slideshow-image/dist/styles.css";
+
+@media only screen and (min-width: 768px) {
+
+    .homeCatLogo:hover
+    {
+        transform: scale(1.05);
+    }
+
+    .homeProductsBtns button:hover
+    {
+        color: #000;
+    }
+
+    .homeProductCard:hover
+    {
+        box-shadow: 0px 0px 5px 0px #666666;
+    }
+
+    .each-slide > div 
+    {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .each-slide > div 
+    {
+        height: 150px;
+    }
+
+}
+
+.homeCatLogo
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: ease-in-out .2s;
+}
+
+.Home
+{
+    margin: 20px 0px;
+}
+
+.homeHeaderImage
+{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.HomeContent
+{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding: 20px 0px;
+    z-index: 10;
+    box-shadow: 0px 0px 8px 2px white;
+}
+
+.homeCategories
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.homeCategories a
+{
+    height: auto;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.homeCatName
+{
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+.homeProductsviewer
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.homeProductsBtns
+{
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+
+.homeProductsBtns button
+{
+    color: #999;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 10px 10px;
+    border: none;
+    margin: 0px 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    transition: ease-in-out .2s;
+}
+
+.homeProductCard
+{
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #e7e7e7;
+    transition: ease-in-out .2s;
+}
+
+.homeProductCard .productCardImageSpace
+{
+    width: 100%;
+    height: 360px;
+}
+
+.homeProductCard .productCardImageSpace .productCardImage
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.homeProductCard .productCardTitle
+{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 3px auto;
+}
+
+.homeProductCard .productCardPriceSpace
+{
+    margin: 5px 40px;
+    display: flex;
+}
+
+.homeProductCard .productCardBSPrice
+{
+    width: 50%;
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #999;
+    margin: auto;
+}
+
+.homeProductCard .productCardPrice
+{
+    width: 50%;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.homeProductsViewerContent
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.homeProductCard .productCardOnSaleTag
+{
+    position: absolute;
+    float: right;
+    margin: 25px;
+    background-color: rgb(245 236 88 / 80%);
+    padding: 20px;
+    border-radius: 25%;
+    text-decoration: underline;
+}
+
+.homeProductCard * 
+{
+    cursor: pointer;
+}
+
+.homeProductCardLink
+{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.each-slide > div 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+  
+  

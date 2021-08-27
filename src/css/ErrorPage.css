@@ -1,0 +1,34 @@
+.ErrorPage
+{
+    margin: 20px;
+}
+
+.ErrorPage .errorImage
+{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+.ErrorPage .errorMessage
+{
+    text-align: center;
+    font-size: 24px;
+    color: #666666;
+}
+
+.ErrorPage .errorMessage a
+{
+    color: #b34a4a;
+    text-decoration: inherit;
+}
+
+.ErrorPage .errorMessage button
+{
+    color: #b34a4a;
+    text-decoration: inherit;
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    cursor: pointer;
+}
