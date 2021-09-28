@@ -3,8 +3,6 @@ import axios from 'axios';
 import configData from "../includes/config.json";
 import AdminBar from "./AdminBar";
 import storage from '../firebase/firebase';
-import ProgressBar from 'react-bootstrap/ProgressBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "../admin/css/common.css";
 
 class AdminAddItem extends Component
@@ -115,6 +113,7 @@ class AdminAddItem extends Component
             alert("Please fill in all the required fields.");
             return;
         }
+        e.target.disabled = true;
         let colorsPromise = new Promise((resolve, reject) => {
             this.state.colors.forEach((color, i)=>{
                 if(color !== '')
@@ -228,11 +227,12 @@ class AdminAddItem extends Component
                     totalBytes: 1
                 });
             }
+            e.target.disabled = false;
         });
     }
 
     render() {
-        let colors = [], colorsDetails = [], ProgressBarDisplay, availableCategories = [], availableSubCategories = [];
+        let colors = [], colorsDetails = [], availableCategories = [], availableSubCategories = [];
 
         //available categories
         this.state.categories.forEach((category, i)=>{
@@ -244,10 +244,6 @@ class AdminAddItem extends Component
         });
 
         const progressValue = (this.state.transferdBytes / this.state.totalBytes) * 100;
-        if(progressValue)
-        {
-            ProgressBarDisplay = <ProgressBar style={{maxWidth: "400px"}} animated now={progressValue}  label={`${progressValue.toFixed(1)}%`} />;
-        }
         this.state.colors.forEach((color, i)=>{
             colors.push(<input key={i} className="inputValue" type="text" value={color} onChange={(e)=>this.changeColorValue(i, e)}/>);
             if(color !== ""){
@@ -346,8 +342,6 @@ class AdminAddItem extends Component
                     {colorsDetails}
 
                     <button className="inputSubmitBtn" type="submit">Add</button>
-
-                    {ProgressBarDisplay}
 
                 </form>
 
