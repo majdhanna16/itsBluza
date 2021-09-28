@@ -46,7 +46,7 @@ class Shop extends Component
     {
         window.scrollTo(0, 0);
         this.onRouteChange();
-        await this.updateCategories();
+        this.updateCategories();
     }
 
     updateCategories(){
