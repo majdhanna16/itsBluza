@@ -242,8 +242,7 @@ class AdminAddItem extends Component
         this.state.subCategories.forEach((subCategory, i)=>{
             availableSubCategories.push(<option key={i} value={subCategory}>{subCategory}</option>);
         });
-
-        const progressValue = (this.state.transferdBytes / this.state.totalBytes) * 100;
+        
         this.state.colors.forEach((color, i)=>{
             colors.push(<input key={i} className="inputValue" type="text" value={color} onChange={(e)=>this.changeColorValue(i, e)}/>);
             if(color !== ""){
