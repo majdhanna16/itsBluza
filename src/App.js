@@ -20,8 +20,6 @@ import AdminAddCategory from "./admin/AdminAddCategory";
 import AdminAddSubCategory from "./admin/AdminAddSubCategory";
 import AdminUpdateShipping from "./admin/AdminUpdateShipping";
 
-import 'font-awesome/css/font-awesome.min.css';
-
 class App extends Component
 {
 
