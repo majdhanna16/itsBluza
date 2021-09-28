@@ -47,6 +47,12 @@
     margin: 20px 0px;
 }
 
+.slide-container
+{
+    top: 0;
+    position: sticky;
+}
+
 .homeHeaderImage
 {
     position: sticky;
