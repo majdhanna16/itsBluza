@@ -126,7 +126,7 @@ class Cart extends Component
                     <div className="buttonImage">
                         <button className="removeProdutBtn" onClick={this.removeProduct} cart_id={product.cid} p_name={product.name}>x</button>
                         <NavLink to={link}>
-                            <img className="productInCartImage" src={images[0]} alt=""/>
+                            <img className="productInCartImage" src={configData.server_URI+"\\"+images[0]} alt=""/>
                         </NavLink>
                     </div>
                     <NavLink to={link} className="ProductInCartName" product_size={product.size}>{product.name} - {product.color}, {product.size}</NavLink>

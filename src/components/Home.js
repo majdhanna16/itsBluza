@@ -81,7 +81,7 @@ class Home extends Component
             <div className="homeProductCard">
               <div className="productCardImageSpace">
                 {saleTag}
-                <img className="productCardImage" src={product.images.split(",")[0]} alt=""/>
+                <img className="productCardImage" src={configData.server_URI+"\\"+product.images.split(",")[0]} alt=""/>
               </div>
               <p className="productCardTitle">{product.name}</p>
               <div className="productCardPriceSpace">

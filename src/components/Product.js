@@ -76,7 +76,7 @@ class Product extends Component
             const images = product.images.split(",");
             this.getProductColor(product.code, pid);
             images.forEach((image, i)=>{
-                mini_images.push(<img key={i} className="miniImage" src={image} alt="" onClick={this.onMiniImageClick} />);
+                mini_images.push(<img key={i} className="miniImage" src={configData.server_URI+"\\"+image} alt="" onClick={this.onMiniImageClick} />);
             });
             if(product.xs > 0)
                 availableSizes.push(<option key="xs" value="xs">XS</option>);
@@ -97,7 +97,7 @@ class Product extends Component
             });
             this.setState({
                 productTitle: product.name,
-                main_image: images[0],
+                main_image: configData.server_URI+"\\"+images[0],
                 mini_images: mini_images,
                 price: product.price,
                 prev_price: product.prev_price,

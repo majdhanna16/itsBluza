@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from 'axios';
 import configData from "../includes/config.json";
 import AdminBar from "./AdminBar";
-import storage from '../firebase/firebase';
 import "../admin/css/common.css";
 
 class AdminAddItem extends Component
@@ -115,7 +114,7 @@ class AdminAddItem extends Component
         }
         e.target.disabled = true;
         let colorsPromise = new Promise((resolve, reject) => {
-            this.state.colors.forEach((color, i)=>{
+            this.state.colors.forEach(async (color, i)=>{
                 if(color !== '')
                 {
                     hasColor = true;
@@ -149,57 +148,38 @@ class AdminAddItem extends Component
                     }
 
                     //upload images
-                    let uploadImagesPromise = new Promise((uploadImageResolve, reject) => {
-                        for(let i=0; i<images.length; i++)
-                        {
-                            let totalBytesAdded = false;
-                            storage.ref(`/ProductsImages/${images[i].name}`).put(images[i]).on("state_changed",
-                            (snap)=>{
-                                if(!totalBytesAdded)
-                                {
-                                    this.setState({
-                                        totalBytes: this.state.totalBytes + snap.totalBytes,
-                                    });
-                                    totalBytesAdded = true;
-                                }
-                                this.setState({
-                                    transferdBytes: this.state.transferdBytes + snap.bytesTransferred,
-                                });
-                            }, (err) =>{
-                            }, ()=>{
-                                storage.ref('ProductsImages').child(images[i].name).getDownloadURL().then(fireBaseUrl => {
-                                    images_urls.push(fireBaseUrl);
-                                    if(images.length === i+1){
-                                        uploadImageResolve();
-                                    }
-                                });
-                            });
-                        }
-                    });
+                    for(let i=0; i<images.length; i++)
+                    {
+                        const imageData = new FormData();
+                        imageData.append('name', images[i].name);
+                        imageData.append('file', images[i]);
 
+                        await axios.post(configData.server_URI + "/uploadImage", imageData).then(result => {
+                            images_urls.push(result.data[0].path);
+                        });
+                    }
                     //when upload finish...
-                    uploadImagesPromise.then(tasks => {
-                        let urlsReq = '';
-                        images_urls.forEach(url => {
-                            urlsReq += (url + ",");
-                        });
-                        urlsReq = urlsReq.slice(0, -1);
-                        //create a json body
-                        jsonReq.push({
-                            title,
-                            category,
-                            subCategory,
-                            color,
-                            price,
-                            xs, s, m, l, xl, xxl, xxxl,
-                            description,
-                            urlsReq
-                        });
-                        if(this.state.colors.length === i+1)
-                        {
-                            resolve();
-                        }
+                    let urlsReq = '';
+                    images_urls.forEach(url => {
+                        urlsReq += (url + ",");
                     });
+                    urlsReq = urlsReq.slice(0, -1);
+                    console.log(urlsReq);
+                    //create a json body
+                    jsonReq.push({
+                        title,
+                        category,
+                        subCategory,
+                        color,
+                        price,
+                        xs, s, m, l, xl, xxl, xxxl,
+                        description,
+                        urlsReq
+                    });
+                    if(this.state.colors.length === i+1)
+                    {
+                        resolve();
+                    }
                 }
             });
         });

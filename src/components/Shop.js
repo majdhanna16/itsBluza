@@ -45,8 +45,8 @@ class Shop extends Component
     async componentDidMount()
     {
         window.scrollTo(0, 0);
+        await this.updateCategories();
         this.onRouteChange();
-        this.updateCategories();
     }
 
     updateCategories(){
@@ -165,7 +165,7 @@ class Shop extends Component
                         <div className="shopProductCard">
                             <div className="shopProductCardImageSpace">
                                 {saleTag}
-                                <img className="shopProductCardImage" src={product.images.split(",")[0]} alt=""/>
+                                <img className="shopProductCardImage" src={configData.server_URI+"\\"+product.images.split(",")[0]} alt=""/>
                             </div>
                             <p className="shopProductCardTitle">{product.name}</p>
                             <div className="shopProductCardPriceSpace">

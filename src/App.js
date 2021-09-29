@@ -75,6 +75,7 @@ class App extends Component
           <Route path="/admin/addcategory" component={AdminAddCategory}/>
           <Route path="/admin/addsubcategory" component={AdminAddSubCategory}/>
           <Route path="/admin/updateshipping" component={AdminUpdateShipping}/>
+
           <Route path="/" component={ErrorPage}/>
         </Switch>
         <BottomBar/>

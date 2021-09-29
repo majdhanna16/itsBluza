@@ -109,7 +109,7 @@ class Profile extends Component
                 productsInBag.push(
                     <NavLink key={product.pid} to={link_path}>
                     <div className="orderProduct">
-                            <img className="orderProductImage" src={images[0]} alt=""/>
+                            <img className="orderProductImage" src={configData.server_URI+"\\"+images[0]} alt=""/>
                             <div className="orderProductDetails">
                                 <p className="orderProductName">{product.name}</p>
                                 {item_details}
@@ -241,7 +241,7 @@ class Profile extends Component
                     <div className="wishlistProductCard">
                         <div className="productCardImageSpace">
                             {saleTag}
-                            <img className="productCardImage" src={product.images.split(",")[0]} alt=""/>
+                            <img className="productCardImage" src={configData.server_URI+"\\"+product.images.split(",")[0]} alt=""/>
                         </div>
                         <p className="productCardTitle">{product.name}</p>
                         <div className="productCardPriceSpace">
