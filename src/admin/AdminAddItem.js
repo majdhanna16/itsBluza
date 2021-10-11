@@ -148,38 +148,46 @@ class AdminAddItem extends Component
                     }
 
                     //upload images
-                    for(let i=0; i<images.length; i++)
-                    {
-                        const imageData = new FormData();
-                        imageData.append('name', images[i].name);
-                        imageData.append('file', images[i]);
+                    let uploadPromise = new Promise(async (resolveUpload, reject) => {
+                    
+                        for(let i=0; i<images.length; i++)
+                        {
+                            const imageData = new FormData();
+                            imageData.append('name', images[i].name);
+                            imageData.append('file', images[i]);
 
-                        await axios.post(configData.server_URI + "/uploadImage", imageData).then(result => {
-                            images_urls.push(result.data[0].path);
-                        });
-                    }
+                            await axios.post(configData.server_URI + "/uploadImage", imageData).then(result => {
+                                images_urls.push(result.data[0].path);
+                            });
+                        }
+                        resolveUpload();
+
+                    });
+                    
                     //when upload finish...
-                    let urlsReq = '';
-                    images_urls.forEach(url => {
-                        urlsReq += (url + ",");
+                    uploadPromise.then(async () => {
+                        let urlsReq = '';
+                        images_urls.forEach(url => {
+                            urlsReq += (url + ",");
+                        });
+                        urlsReq = urlsReq.slice(0, -1);
+                        console.log(urlsReq);
+                        //create a json body
+                        jsonReq.push({
+                            title,
+                            category,
+                            subCategory,
+                            color,
+                            price,
+                            xs, s, m, l, xl, xxl, xxxl,
+                            description,
+                            urlsReq
+                        });
+                        if(this.state.colors.length === i+1)
+                        {
+                            resolve();
+                        }
                     });
-                    urlsReq = urlsReq.slice(0, -1);
-                    console.log(urlsReq);
-                    //create a json body
-                    jsonReq.push({
-                        title,
-                        category,
-                        subCategory,
-                        color,
-                        price,
-                        xs, s, m, l, xl, xxl, xxxl,
-                        description,
-                        urlsReq
-                    });
-                    if(this.state.colors.length === i+1)
-                    {
-                        resolve();
-                    }
                 }
             });
         });
@@ -188,6 +196,7 @@ class AdminAddItem extends Component
             alert("Please add at least one color.");
             return;
         }
+        console.log(jsonReq);
         colorsPromise.then(async () => {
             await axios({
                 method: "POST",
