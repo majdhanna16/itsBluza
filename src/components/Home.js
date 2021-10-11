@@ -46,7 +46,7 @@ class Home extends Component
         const link = "/shop/" + category.category_name.toUpperCase();
         categories.push(
           <NavLink key={category.cid} to={link}>
-              <img className="homeCatLogo" src={category.category_image_path} alt=""/>
+              <img className="homeCatLogo" src={configData.server_URI+"\\"+category.category_image_path} alt=""/>
               <label className="homeCatName">{category.category_name}</label>
           </NavLink>
         );

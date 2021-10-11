@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from 'axios';
 import configData from "../includes/config.json";
 import AdminBar from "./AdminBar";
-import storage from '../firebase/firebase';
 import BtnLoading from "../images/colors_loading_btn.gif";
 import "../admin/css/common.css";
 
@@ -61,25 +60,25 @@ class AdminAddCategory extends Component
         this.setState({
             loadingAddBtn: true
         });
-        storage.ref(`/CategoriesImages/${category_image[0].name}`).put(category_image[0]).on("state_changed",
-        (snap)=>{
-        }, (err) =>{
-        }, ()=>{
-            storage.ref('CategoriesImages').child(category_image[0].name).getDownloadURL().then(async fireBaseUrl => {
-                await axios({
-                    method: 'POST',
-                    url: configData.server_URI + '/admin/addCategory',
-                    params: {
-                        name: category_name,
-                        path: fireBaseUrl
-                    }
-                });
-                e.target.reset();
-                this.setState({
-                    loadingAddBtn: false
-                });
-                alert("successfully added new category.");
+
+        const imageData = new FormData();
+        imageData.append('name', category_image[0].name);
+        imageData.append('file', category_image[0]);
+
+        axios.post(configData.server_URI + "/uploadImage", imageData).then(async(result) => {
+            await axios({
+                method: 'POST',
+                url: configData.server_URI + '/admin/addCategory',
+                params: {
+                    name: category_name,
+                    path: result.data[0].path
+                }
             });
+            e.target.reset();
+            this.setState({
+                loadingAddBtn: false
+            });
+            alert("successfully added new category.");
         });
     }
 
