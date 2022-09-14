@@ -432,12 +432,12 @@ class Checkout extends Component
 
                     <div className="orderTotalsField">
                         <label className="orderTotalKey">Subtotal:</label>
-                        <label className="orderTotalValue">&#8362;{this.state.subtotal.toLocaleString()}</label>
+                        <label className="orderTotalValue">&#36;{this.state.subtotal.toLocaleString()}</label>
                     </div>
 
                     <div className="orderTotalsField">
                         <label className="orderTotalKey">Shipping:</label>
-                        <label className="orderTotalValue">&#8362;{this.state.shipping.toLocaleString()}</label>
+                        <label className="orderTotalValue">&#36;{this.state.shipping.toLocaleString()}</label>
                     </div>
 
                 </div>
@@ -445,7 +445,7 @@ class Checkout extends Component
                 <div className="TotalLastField">
                     <div className="orderTotalsField">
                         <label className="orderTotalKey">Total:</label>
-                        <label className="orderTotalValue">&#8362;{this.getTotalPrice().toLocaleString()}</label>
+                        <label className="orderTotalValue">&#36;{this.getTotalPrice().toLocaleString()}</label>
                     </div>
                 </div>
 

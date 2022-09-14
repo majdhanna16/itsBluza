@@ -158,7 +158,7 @@ class Shop extends Component
                 if(product.prev_price)
                 {
                     saleTag = <span className="shopProductCardOnSaleTag">Sale</span>;
-                    prevPrice = <label className="shopProductCardBSPrice">&#8362;{product.prev_price.toFixed(2)}</label>;
+                    prevPrice = <label className="shopProductCardBSPrice">&#36;{product.prev_price.toFixed(2)}</label>;
                 }
                 products.push(
                     <NavLink key={product.pid} className="shopProductCardLink" to={link_path}>
@@ -170,7 +170,7 @@ class Shop extends Component
                             <p className="shopProductCardTitle">{product.name}</p>
                             <div className="shopProductCardPriceSpace">
                                 {prevPrice}
-                                <label className="shopProductCardPrice">&#8362;{product.price.toFixed(2)}</label>
+                                <label className="shopProductCardPrice">&#36;{product.price.toFixed(2)}</label>
                             </div>
                         </div>
                     </NavLink>

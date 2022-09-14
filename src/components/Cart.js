@@ -259,7 +259,7 @@ class Cart extends Component
         {
             shipping_cost = <div className="CartTotalsField">
                 <label className="CartTotalKey">Shipping:</label>
-                <label className="CartTotalValue">&#8362;{this.state.shipping.toLocaleString()}</label>
+                <label className="CartTotalValue">&#36;{this.state.shipping.toLocaleString()}</label>
             </div>;
         }
         return (
@@ -276,7 +276,7 @@ class Cart extends Component
 
                             <div className="CartTotalsField">
                                 <label className="CartTotalKey">Subtotal:</label>
-                                <label className="CartTotalValue">&#8362;{this.state.subtotal.toLocaleString()}</label>
+                                <label className="CartTotalValue">&#36;{this.state.subtotal.toLocaleString()}</label>
                             </div>
 
                             {shipping_cost}
@@ -285,7 +285,7 @@ class Cart extends Component
                         <div className="TotalLastField">
                             <div className="CartTotalsField">
                                 <label className="CartTotalKey">Total:</label>
-                                <label className="CartTotalValue">&#8362;{(this.state.subtotal !== 0 ? (this.state.subtotal + this.state.shipping).toLocaleString() : 0 )}</label>
+                                <label className="CartTotalValue">&#36;{(this.state.subtotal !== 0 ? (this.state.subtotal + this.state.shipping).toLocaleString() : 0 )}</label>
                             </div>
                         </div>
                         <button className="CheckoutBtn" onClick={this.checkoutBtnHandle}>Proceed to checkout</button>

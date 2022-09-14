@@ -369,7 +369,7 @@ class Product extends Component
             const prevPrice = this.state.prev_price;
             const newPrice = this.state.price;
             let save = (prevPrice - newPrice) / prevPrice * 100;
-            previousPriceSection.push(<label key={0} className="PrevPrice">&#8362;{this.state.prev_price}</label>);
+            previousPriceSection.push(<label key={0} className="PrevPrice">&#36;{this.state.prev_price}</label>);
             previousPriceSection.push(<p key={1} className="savePercent">You'll save {save.toFixed(1)}%</p>);
         }
 
@@ -390,7 +390,7 @@ class Product extends Component
 
                         <p className="ProductTitle">{this.state.productTitle}</p>
                         <div className="PricesSpace">
-                            <label className="Price">&#8362;{this.state.price.toFixed(2)}</label>
+                            <label className="Price">&#36;{this.state.price.toFixed(2)}</label>
                             {previousPriceSection}
                         </div>
 
