@@ -171,7 +171,6 @@ class AdminAddItem extends Component
                             urlsReq += (url + ",");
                         });
                         urlsReq = urlsReq.slice(0, -1);
-                        console.log(urlsReq);
                         //create a json body
                         jsonReq.push({
                             title,
@@ -196,7 +195,6 @@ class AdminAddItem extends Component
             alert("Please add at least one color.");
             return;
         }
-        console.log(jsonReq);
         colorsPromise.then(async () => {
             await axios({
                 method: "POST",
@@ -216,6 +214,7 @@ class AdminAddItem extends Component
                     totalBytes: 1
                 });
             }
+            alert("successfully added new product to shop.");
             e.target.disabled = false;
         });
     }
